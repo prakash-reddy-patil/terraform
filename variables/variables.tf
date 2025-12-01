@@ -1,6 +1,6 @@
 variable "ami_id" {
    type       = string
-  # default     = "ami-09c813fb71547fc4f"
+   default     = "ami-09c813fb71547fc4f"
   description = "The EC2 instance type"
 } 
 
@@ -16,7 +16,7 @@ variable "ec2_tags" {
        Terraform = "true"
        Project = "joindevops" 
        Environment = "dev"
-    }
+  }
 }
 
 variable "sg_name" {
