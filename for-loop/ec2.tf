@@ -34,3 +34,5 @@ resource "aws_security_group" "allow_all" {
   }
 
 }
+
+# When I don’t have a map and only have a list, I can use to_set() to convert the list into a set. Then each item becomes a value, so in the for_each loop I can only use each.value (there is no each.key). 
