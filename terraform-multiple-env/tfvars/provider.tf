@@ -7,11 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "remote-state-ppr"
-    key            = "provisioners-demo"
-    region         = "us-east-1"
-    use_lockfile = true 
-    encrypt        = true 
+ 
   }
 }
 

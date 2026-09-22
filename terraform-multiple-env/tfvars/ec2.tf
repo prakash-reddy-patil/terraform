@@ -2,7 +2,7 @@ resource "aws_instance" "terraform" {
     ami           = var.ami_id
     instance_type = var.instance_type
     vpc_security_group_ids = [aws_security_group.allow_all.id]
-    tags = merge (
+    tags = merge(
       local.common_tags,
       {
         Name= "${local.common_name}-tfvars-multi-env"
@@ -30,7 +30,7 @@ resource "aws_security_group" "allow_all" {
     
     }
 
-    tags = merge (
+    tags = merge(
       local.common_tags,
       {
         Name= "${local.common_name}-tfvars-multi-env"
